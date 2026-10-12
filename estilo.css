@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#body{
+    color: black;
+}
+#contenedor{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: black;
+}
+#cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(238, 216, 15);
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+#menu > ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 10pt;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+#menu a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+
+}
+#menu a:hover{
+    background-color: dimgrey;
+    color: white;
+}
+#contenido{
+    padding: 10px;
+    height: 100%;
+    margin-top: 100px;
+    position: relative;
+    width: 99%;
+  
+}
+#titulo{
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-top: 100px;
+    
+}
+.personajes{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+
+}
+.personajes a:hover{
+    background-color: dimgrey;
+    color: white;
+    transform: translate(50%, 50%);
+}
+.personaje{
+    background-color: #1a1f2c; 
+    border-radius: 20px; 
+    width: 340px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+.imegen{
+    position: absolute;
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+}
+#imagen1 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: black;
+}
+#imagen2 img{
+    width: 185%;            
+    height: auto;           
+    object-fit: cover;      
+    background-color: black;
+}
+.imagen-gris{
+    filter: grayscale(100%);
+}
+.etiqueta{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    
+}
+.jedi{
+    background-color: #00bfff; 
+    color: black;
+}
+.sith{
+    background-color: #e51b3c;
+    color: white;
+}
+.contenidos{
+    padding: 25px;
+    background-color: rgb(51, 49, 49);
+}
+.contenidos h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+.contenidos p {
+    color: #a0a5b5;
+    margin: 0;
+    font-size: 14px;
+}
+ h1{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+}
+p{
+   text-align: center;
+   color: white;
+   padding: 20px;
+   margin: 0; 
+   font-size: 20px;
+}
+.boton-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 100;
+    background-color: #f1b834;
+    color: black;
+    border: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
